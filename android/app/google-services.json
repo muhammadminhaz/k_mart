@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "729662234032",
+    "project_id": "kmart-6905d",
+    "storage_bucket": "kmart-6905d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:729662234032:android:f776cde6929618f63a4a75",
+        "android_client_info": {
+          "package_name": "com.redminlab.k_mart"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "729662234032-el6ec7k2uploirroo35fdrmmgatna30e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBtSlAne4rIG9vaky1jWyY9_ybYrz0fI7g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "729662234032-el6ec7k2uploirroo35fdrmmgatna30e.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "729662234032-t7cqavgsgo49eh8paegmaucge0t4lfdd.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.redminlab.kMart"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
