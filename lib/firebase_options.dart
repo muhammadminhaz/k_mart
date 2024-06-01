@@ -50,7 +50,7 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyBtSlAne4rIG9vaky1jWyY9_ybYrz0fI7g',
+    apiKey: 'GOOGLE_API_KEY',
     appId: '1:729662234032:android:f776cde6929618f63a4a75',
     messagingSenderId: '729662234032',
     projectId: 'kmart-6905d',
@@ -58,7 +58,7 @@ class DefaultFirebaseOptions {
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyB2dMGfMvb3VmA-npdT9w2lR9JwDO1VB5s',
+    apiKey: 'GOOGLE_API_KEY',
     appId: '1:729662234032:ios:cde4377c796e4acb3a4a75',
     messagingSenderId: '729662234032',
     projectId: 'kmart-6905d',
