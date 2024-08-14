@@ -167,7 +167,7 @@ class _MyHomePageState extends State<MyHomePage> {
     }
   }
 
-  GestureDetector singleItem(QueryDocumentSnapshot document) {
+  GestureDetector singleItem(QueryDocumentSnapshot document, int index) {
     var data = document.data() as Map<String, dynamic>;
     Item item = Item(
         userToken: data["UserToken"],
@@ -197,7 +197,7 @@ class _MyHomePageState extends State<MyHomePage> {
           ClipRRect(
             borderRadius: BorderRadius.circular(12),
             child: Hero(
-                tag: 'item_${data["Id"]}',
+                tag: 'item_${data["Id"]}_${index}',
                 child: FancyShimmerImage(
                   imageUrl: "${data["ImageUrl"][0]}",
                   boxFit: BoxFit.cover,
@@ -281,7 +281,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 left: index % 2 == 0 ? 8.0 : 0,
                 bottom: index == snapshotData!.docs.length ? 450 : 0,
                 right: index % 2 != 0 ? 8.0 : 0),
-            child: singleItem(snapshotData!.docs[index]),
+            child: singleItem(snapshotData!.docs[index], index),
           );
         },
         childCount: snapshotData!.docs.length,
