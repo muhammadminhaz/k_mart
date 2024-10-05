@@ -79,15 +79,17 @@ class _SplashScreenState extends State<SplashScreen> {
     Navigator.of(context).pushReplacement(
       MaterialPageRoute(
         builder: (BuildContext context) => ShowCaseWidget(
-            builder: Builder(
-          builder: (context) => const MyHomePage(
-            title: 'Marketplace',
-            showcase: true,
-          ),
-        )), // Replace 'NextScreen' with your desired screen.
+          builder: (context) {
+            return const MyHomePage(
+              title: 'Marketplace',
+              showcase: true,
+            );
+          },
+        ),
       ),
     );
   }
+
 
   _openAppLink() async {
     DocumentSnapshot<Map<String, dynamic>> snapshot = await FirebaseFirestore
